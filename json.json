@@ -1,0 +1,10 @@
+{
+    "name": "El aquelarre",
+    "artist": "Francisco de Goya",
+    "description": "Uno de los mejores cuadros de la historia",
+    "dimension": {
+        "width": 43,
+        "height": 30
+    },
+    "tags": ["oil"]
+}
