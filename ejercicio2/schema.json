@@ -1,0 +1,69 @@
+{
+    "$schema": "https://json-schema.org/draft/2020-12/schema",
+    "$id": "http://example.com/schemas/painting.schema.json",
+    "type": "object",
+    "title": "MiDefinicion",
+    "description": "Descripcion de mi definicion",
+    "required": ["squadName", "members"],
+    "properties": {
+        "squadName": {
+            "type": "string",
+            "description": "Squad name",
+            "minLength": 1,
+            "maxLength": 50
+        },
+        "homeTown": {
+            "type": "string",
+            "description": "Squad name",
+            "minLength": 1,
+            "maxLength": 50
+        },
+        "formed": {
+            "type": "number",
+            "description": "The year where the squad was formed"
+        },
+        "secretBase": {
+            "type": "string",
+            "description": "The secret base name"
+        },
+        "active": {
+            "type": "boolean"
+        },
+        "members": {
+            "type": "array",
+            "items": { "$ref": "#/$defs/member" }
+        }
+    },
+    "$defs": {
+        "member": {
+            "type": "object",
+            "properties": {
+                "name": {
+                    "type": "string",
+                    "description": ""
+                },
+                "age": {
+                    "type": "number",
+                    "description": ""
+                },
+                "secretIdentity": {
+                    "type": "string",
+                    "description": ""
+                },
+                "powers": {
+                    "type": "array",
+                    "items": {
+                        "type": "string",
+                        "enum": [
+                            "Radiation resistance",
+                            "Turning tiny",
+                            "Radiation blast",
+                            "Million tonne punch",
+                            "Damage resistance"
+                        ]
+                    }
+                }
+            }
+        }
+    }
+}

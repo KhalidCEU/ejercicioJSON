@@ -1,15 +1,16 @@
 
 ## Ejercicio JSON Schema
 
-[Enlace](https://jsonschema.dev/) al **validador** usado
+[Enlace](https://www.liquid-technologies.com/online-json-schema-validator) al **validador** usado
 
-**Solucion**
+**Soluciones**
 
-Fichero [json.json](/json.json)
+- Ejercicio 1 (schema -> json) : [Fichero](/ejercicio1/json.json)
+- Ejercicio 2 (json -> schema) : [Fichero](/ejercicio2/schema.json)
 
-### Enunciado
+### Enunciados
 
-1. Crea un JSON que sea válido con el [siguiente JSON Schema](/schema.json):
+1. Crea un **JSON** que sea válido con el [siguiente JSON Schema](/ejercicio1/schema.json):
 
 ```json
 {
@@ -59,5 +60,39 @@ Fichero [json.json](/json.json)
             }
         }
     }
+}
+```
+
+
+2. Crea un **JSON Schema** que sea válido para el [siguiente JSON](/ejercicio2/json.json):
+
+```
+{
+    "squadName": "Super hero squad",
+    "homeTown": "Metro City",
+    "formed": 2016,
+    "secretBase": "Super tower",
+    "active": true,
+    "members": [
+        {
+            "name": "Molecule Man",
+            "age": 29,
+            "secretIdentity": "Dan Jukes",
+            "powers": [
+                "Radiation resistance",
+                "Turning tiny",
+                "Radiation blast"
+            ]
+        },
+        {
+            "name": "Madame Uppercut",
+            "age": 39,
+            "secretIdentity": "Jane Wilson",
+            "powers": [
+                "Million tonne punch",
+                "Damage resistance"
+            ]
+        }
+    ]
 }
 ```
